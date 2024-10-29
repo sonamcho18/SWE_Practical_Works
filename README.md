@@ -1,11 +1,15 @@
 # Exercise 1
-Generates and prints a list of the first 10 Fibonacci numbers.
+Splits the expression into tokens, pushes numbers onto the stack, and performs operations when encountering operators.
+Final result is the last element on the stack.
 
 # Exercise 2
-Returns the index of the first Fibonacci number greater than the specified value.
+Since stacks follow Last-In-First-Out (LIFO) order and queues follow First-In-First-Out (FIFO) order
 
 # Exercise 3
-Uses a mathematical property to check if a number is a Fibonacci number.
+Uses a deque to implement a basic task coordinator.
+Tasks are added to the end of the queue and processed from the front, ensuring FIFO order.
+When there are no tasks left, it prints "No tasks to process".
 
 # Exercise 4
-Generates Fibonacci numbers up to a specified term and calculates the ratios of consecutive numbers to show how they approach the golden ratio.
+Processes each task in the order they were added.
+When there are no tasks left, it prints "No tasks to process".
