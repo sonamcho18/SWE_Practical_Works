@@ -1,14 +1,17 @@
-# Exerxise 1
-This code repeats through the tree to find the rightmost node, which holds the maximum value in a BST.
+# Exercise 1
+Initializes a queue with the starting point and a set to keep track of visited nodes.
+Constantly dequeues paths from the queue, checking if the last node of each path is the goal.
+If not the goal and not visited, it adds all neighbors to the path and enqueues the new path.
+Returns the path when the goal is found.
 
 # Exercise 2
-This function repeatedly counts all nodes in the left and right subtrees and adds one for the current node, providing the total count.
+Uses Depth-First Search to detect cycles.
+Maintains two sets: visiting nodes currently in the execution stack and visited nodes that have been fully explored.
+If a node is encountered in visiting, a cycle is detected.
 
 # Exercise 3
-This function uses a sequence to perform a level-order crossing, visiting nodes level by level from left to right.
+Employs a priority queue to explore the graph based on the shortest known distances.
+Builds the shortest path from the end node back to the start node using the recorded shortest paths.
 
 # Exercise 4
-This function calculates the height of the tree by finding the maximum height between the left and right subtrees and adding one for the current node.
-
-# Exercise 5
-This function checks whether each node satisfies the BST properties by ensuring that each node's value is within the valid range defined by its lineage.
+Uses BFS to determine if the graph can be colored using two colors such that no two adjacent nodes have the same color.
